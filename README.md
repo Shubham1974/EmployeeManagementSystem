@@ -64,7 +64,7 @@ MainForm.cs
 Form1.cs
 
 ## Database Setup
-```sql
+sql
 CREATE TABLE EmployeeTbl (
   EmpId INT PRIMARY KEY,
   EmpName VARCHAR(100),
@@ -80,8 +80,6 @@ CREATE TABLE SalaryTbl (
   Bonus DECIMAL(18,2),
   FOREIGN KEY (EmpId) REFERENCES EmployeeTbl(EmpId)
 );
-
-
 ## How to Run
 
 1. Open `EmployeeManagementSystem.sln` in Visual Studio.
@@ -95,23 +93,6 @@ CREATE TABLE SalaryTbl (
 * Add new employees using the "Add Employee" form.
 * Monitor total and active employee statistics on the dashboard.
 * Manage salary records using the "Salary" section.
-
-## Contributing
-
-1. Fork the repository
-2. Create a branch: `git checkout -b feature/YourFeature`
-3. Commit your changes: `git commit -m "Add some feature"`
-4. Push to the branch: `git push origin feature/YourFeature`
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License — see the LICENSE file for details.
-
-## Author
-
-Shubham Bhagwan Mukhekar  
-Contact: mshubham2503@gmail.com
 
 ## Screenshots
 
@@ -130,4 +111,20 @@ Contact: mshubham2503@gmail.com
 ### Employee Data  
 ![Employee Data](https://github.com/user-attachments/assets/e8d1eb37-da07-4b92-82e5-f9dc31140cbd)
 
-```
+
+## Contributing
+
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/YourFeature`
+3. Commit your changes: `git commit -m "Add some feature"`
+4. Push to the branch: `git push origin feature/YourFeature`
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+## Author
+
+Shubham Bhagwan Mukhekar  
+Contact: mshubham2503@gmail.com
