@@ -13,7 +13,6 @@
 * [Database Setup](#database-setup)
 * [How to Run](#how-to-run)
 * [Usage](#usage)
-* [Video](#video)
 * [Screenshots](#screenshots)
 * [Contributing](#contributing)
 * [License](#license)
@@ -23,62 +22,48 @@
 
 ## Features
 
-* Add new employee records
-* View total and active employee counts
-* Manage employee salary details
-* Simple validation and user prompts
-* User login and registration system
+* Add new employee records  
+* View total and active employee counts  
+* Manage employee salary details  
+* Simple validation and user prompts  
+* User login and registration system  
 
 ## Tech Stack
 
-* Language: C#
-* UI: Windows Forms (WinForms)
-* Database: Microsoft SQL Server LocalDB (AttachDB) / `.mdf` file
-* IDE: Visual Studio (recommended)
+* Language: C#  
+* UI: Windows Forms (WinForms)  
+* Database: Microsoft SQL Server LocalDB (AttachDB) / `.mdf` file  
+* IDE: Visual Studio (recommended)  
 
 ## Prerequisites
 
-* Windows OS
-* Visual Studio 2022 (Community or higher) with .NET desktop development workload
-* SQL Server Express LocalDB (installed with Visual Studio by default)
+* Windows OS  
+* Visual Studio 2022 (Community or higher) with .NET desktop development workload  
+* SQL Server Express LocalDB (installed with Visual Studio by default)  
 
 ## Project Structure
 /EmployeeManagementSystem
 /EmployeeManagementSystem.sln
 /EmployeeManagementSystem
-  /bin
-  /obj
-  /Assets
-  /Directory
-  /Resources
-  /Forms
-    - AddEmployee.cs
-    - RegisterForm.cs
-    - Dashboard.cs
-    - Salary.cs
-  /Data
-    - EmployeeData.cs
-    - SalaryData.cs
-  Program.cs
-  App.config
-  MainForm.cs
-  Form1.cs
-  README.md
-
+/bin
+/obj
+/Assets
+/Directory
+/Resources
+/Forms
+- AddEmployee.cs
+- RegisterForm.cs
+- Dashboard.cs
+- Salary.cs
+/Data
+- EmployeeData.cs
+- SalaryData.cs
+Program.cs
+App.config
+MainForm.cs
+Form1.cs
 
 ## Database Setup
-
-1. If an `.mdf` file is included in the `Data` folder, ensure it is set to be copied to the output directory:
-   - Set property: **Copy to Output Directory → "Copy if newer"**
-
-2. Sample connection string used in the project:
-
-```csharp
-SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\EmployeeDatabase.mdf;Integrated Security=True;Connect Timeout=30");
-```
-
-Example table structure (adjust as needed):
-
 ```sql
 CREATE TABLE EmployeeTbl (
   EmpId INT PRIMARY KEY,
@@ -95,7 +80,7 @@ CREATE TABLE SalaryTbl (
   Bonus DECIMAL(18,2),
   FOREIGN KEY (EmpId) REFERENCES EmployeeTbl(EmpId)
 );
-```
+
 
 ## How to Run
 
@@ -119,8 +104,6 @@ CREATE TABLE SalaryTbl (
 4. Push to the branch: `git push origin feature/YourFeature`
 5. Open a Pull Request
 
-Please use clear commit messages and update database schema if applicable.
-
 ## License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
@@ -130,20 +113,21 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 Shubham Bhagwan Mukhekar  
 Contact: mshubham2503@gmail.com
 
-## Video
-
-[Watch Demo Video](https://drive.google.com/file/d/1uT0UD4Lki7AvdWouwRLVOZilRlEUSFnb/view?usp=sharing)
-
 ## Screenshots
 
 ### Login Page  
-![Login Page](./Screenshots/LoginPage.png)
+![Login Page](https://github.com/user-attachments/assets/d883c30d-5cdf-44bc-b68b-a889d6869d38)
+
+### Register Account  
+![Register Account](https://github.com/user-attachments/assets/1b03a5ea-e636-467d-8a0f-2c13d3c0dede)
 
 ### Dashboard  
-![Dashboard](./Screenshots/Dashboard.png)
+![Dashboard](https://github.com/user-attachments/assets/b82077e9-9ed4-42c4-8524-42586db918a8)
 
-### Add Employee Form  
-![Add Employee](./Screenshots/AddEmployee.png)
+### Salary  
+![Salary](https://github.com/user-attachments/assets/12002fd5-66c4-4c06-bbe9-f6ce1fda96d3)
 
-### Salary Management  
-![Salary Form](./Screenshots/Salary.png)
+### Employee Data  
+![Employee Data](https://github.com/user-attachments/assets/e8d1eb37-da07-4b92-82e5-f9dc31140cbd)
+
+```
